@@ -1,7 +1,7 @@
 import requests
 import datetime
 
-API_KEY = '1b96de7dc8c7442db91526a3078a60e4'
+API_KEY = 'your api key'
 
 h, t = 'h', 't'
 
@@ -28,7 +28,6 @@ elif wish == t:
         print("there was a problem")
     else:
         data = response.json()
-        # print(data)
         for i in range(10):
             title = data['articles'][i]['title']
             print()
